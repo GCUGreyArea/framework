@@ -1,0 +1,18 @@
+/**
+ * @file LoggerFactory.cpp
+ * @author Barry Robinson (barry.robinson@alertlogic.com)
+ * @brief 
+ * @version 1.0
+ * @date 27-11-2021
+ * 
+ * @copyright Copyright (c) Alert Logic 2021
+ * 
+ */
+#include <iostream>
+#include <string>
+#include <map>
+#include <memory>
+
+#include "LoggerFactory.h"
+
+// The one and only logger factory

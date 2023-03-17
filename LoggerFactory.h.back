@@ -1,0 +1,19 @@
+// ==================================================================
+// logerFactory.h
+//
+// NOTE: 
+// ==================================================================
+#ifndef __LOGERFACTORY_CLASS__
+#define __LOGERFACTORY_CLASS__
+
+
+#include <memory>
+#include <map>
+
+#include "Base.h"
+#include "Log.h"
+
+
+
+#endif//__LOGERFACTORY_CLASS__
+

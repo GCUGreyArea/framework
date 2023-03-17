@@ -1,0 +1,166 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+$(LIB)	Makefile	/^$(LIB) : $(LIBOBJ) $(LIBHDR)$/;"	t
+%.o	Makefile	/^%.o: %.cpp$/;"	t
+Args	Args.cpp	/^Args::Args(int argc, const char ** argv) : $/;"	f	class:Args
+Args	Args.h	/^class Args {$/;"	c
+Base	Base.h	/^        Base() {$/;"	f	class:Base
+Base	Base.h	/^        Base(const char * name) : mClassName(name) {}$/;"	f	class:Base
+Base	Base.h	/^class Base {$/;"	c
+CC	Makefile	/^CC     = g++$/;"	m
+DEFAULT_LOG_FILE	Log.h	/^        constexpr static const char * DEFAULT_LOG_FILE = "\/var\/log\/app.log";$/;"	m	class:Log	typeref:typename:const char *
+DEFAULT_LOG_LEVEL	Log.h	/^        constexpr static const e_LogLelvel_t DEFAULT_LOG_LEVEL = Log::LEVEL_ERROR; $/;"	m	class:Log	typeref:typename:const e_LogLelvel_t
+DEFAULT_LOG_SIZE	Log.h	/^        constexpr static const int DEFAULT_LOG_SIZE = 10240;$/;"	m	class:Log	typeref:typename:const int
+Date	Date.cpp	/^Date::Date() : Base("Date") {$/;"	f	class:Date
+Date	Date.cpp	/^Date::Date(time_t dt) : $/;"	f	class:Date
+Date	Date.h	/^class Date : public Base {$/;"	c
+FILE_SIZE_10Mb	Log.h	/^        constexpr static int FILE_SIZE_10Mb      = (10 * 1024 * 1024);$/;"	m	class:Log	typeref:typename:int
+FILE_SIZE_10k	Log.h	/^        constexpr static int FILE_SIZE_10k       = (10 * 1024);$/;"	m	class:Log	typeref:typename:int
+FILE_SIZE_1Mb	Log.h	/^        constexpr static int FILE_SIZE_1Mb       = (1024 * 1024);     $/;"	m	class:Log	typeref:typename:int
+FILE_SIZE_1k	Log.h	/^        constexpr static int FILE_SIZE_1k        = (1  * 1024);$/;"	m	class:Log	typeref:typename:int
+FILE_SIZE_20Mb	Log.h	/^        constexpr static int FILE_SIZE_20Mb      = (20 * 1024 * 1024);$/;"	m	class:Log	typeref:typename:int
+FILE_SIZE_20k	Log.h	/^        constexpr static int FILE_SIZE_20k       = (20 * 1024);$/;"	m	class:Log	typeref:typename:int
+FILE_SIZE_256k	Log.h	/^        constexpr static int FILE_SIZE_256k      = (256 * 1024);      $/;"	m	class:Log	typeref:typename:int
+FILE_SIZE_2Mb	Log.h	/^        constexpr static int FILE_SIZE_2Mb       = (2048 * 1024);     $/;"	m	class:Log	typeref:typename:int
+FILE_SIZE_50Mb	Log.h	/^        constexpr static int FILE_SIZE_50Mb      = (50 * 1024 * 1024);   $/;"	m	class:Log	typeref:typename:int
+FILE_SIZE_50k	Log.h	/^        constexpr static int FILE_SIZE_50k       = (50 * 1024);$/;"	m	class:Log	typeref:typename:int
+FILE_SIZE_512k	Log.h	/^        constexpr static int FILE_SIZE_512k      = (512 * 1024);      $/;"	m	class:Log	typeref:typename:int
+FILE_SIZE_5k	Log.h	/^        constexpr static int FILE_SIZE_5k        = (5  * 1024);$/;"	m	class:Log	typeref:typename:int
+FILE_SIZE_UNLIMITED	Log.h	/^        constexpr static int FILE_SIZE_UNLIMITED = -1;$/;"	m	class:Log	typeref:typename:int
+HDR	Makefile	/^HDR    := $(patsubst %.cpp,%.h,$(SRC)) $/;"	m
+LEVEL_CRIT	Log.h	/^            LEVEL_CRIT,$/;"	e	enum:Log::__anon0d9ce0fd0103
+LEVEL_ERROR	Log.h	/^            LEVEL_ERROR,$/;"	e	enum:Log::__anon0d9ce0fd0103
+LEVEL_INFO	Log.h	/^            LEVEL_INFO,$/;"	e	enum:Log::__anon0d9ce0fd0103
+LEVEL_UNKNOWN	Log.h	/^            LEVEL_UNKNOWN$/;"	e	enum:Log::__anon0d9ce0fd0103
+LEVEL_WARN	Log.h	/^            LEVEL_WARN,$/;"	e	enum:Log::__anon0d9ce0fd0103
+LIB	Makefile	/^LIB = framework.a$/;"	m
+LIBDIR	Makefile	/^LIBDIR      =  \/usr\/local\/lib$/;"	m
+LIBHDR	Makefile	/^LIBHDR := $(patsubst %.cpp,%.h,$(LIBSRC)) $/;"	m
+LIBOBJ	Makefile	/^LIBOBJ := $(patsubst %.cpp,%.o,$(LIBSRC)) $/;"	m
+LIBSRC	Makefile	/^LIBSRC = Log.cpp 				\\$/;"	m
+Lockable	Lockable.h	/^class Lockable {$/;"	c
+Log	Log.cpp	/^Log::Log() : $/;"	f	class:Log
+Log	Log.cpp	/^Log::Log(const char * logName) : $/;"	f	class:Log
+Log	Log.cpp	/^Log::Log(const char * logName, e_LogLelvel_t level) : $/;"	f	class:Log
+Log	Log.cpp	/^Log::Log(const char * logName, e_LogLelvel_t level, int maxLogSize) : $/;"	f	class:Log
+Log	Log.h	/^class Log : public PthreadLockable, public Base {$/;"	c
+LogEntry	LogEntry.cpp	/^LogEntry::LogEntry() : Base("LogEntry") {}$/;"	f	class:LogEntry
+LogEntry	LogEntry.h	/^class LogEntry : public Base {$/;"	c
+LogReader	LogReader.cpp	/^LogReader::LogReader() : Base("LogReader") {}$/;"	f	class:LogReader
+LogReader	LogReader.h	/^class LogReader : public Base {$/;"	c
+LoggerFactory	LoggerFactory.cpp	/^LoggerFactory::LoggerFactory() : $/;"	f	class:LoggerFactory
+LoggerFactory	LoggerFactory.h	/^class LoggerFactory : public Base {$/;"	c
+MAX_LEVEL_STR_LEN	Log.h	/^        constexpr static int MAX_LEVEL_STR_LEN   = 6;$/;"	m	class:Log	typeref:typename:int
+OBJ	Makefile	/^OBJ    := $(patsubst %.cpp,%.o,$(SRC)) $/;"	m
+PthreadLockable	PthreadLockable.cpp	/^PthreadLockable::PthreadLockable() {$/;"	f	class:PthreadLockable
+PthreadLockable	PthreadLockable.h	/^class PthreadLockable : public Lockable {$/;"	c
+PthreadRunable	PthreadRunable.cpp	/^PthreadRunable::PthreadRunable(const char * threadName) : $/;"	f	class:PthreadRunable
+PthreadRunable	PthreadRunable.h	/^class PthreadRunable : public Runable {$/;"	c
+PthreadTimer	PthreadTimer.cpp	/^PthreadTimer::PthreadTimer(const char * timerName,int timeout) : $/;"	f	class:PthreadTimer
+PthreadTimer	PthreadTimer.h	/^class PthreadTimer : public PthreadRunable {$/;"	c
+Runable	Runable.h	/^class Runable {$/;"	c
+SUPPORTDIR	Makefile	/^SUPPORTDIR  = ..\/..\/support_lib$/;"	m
+SUPPORTDIR	Makefile	/^SUPPORTDIR  = ..\/support_lib$/;"	m
+SUPPORTLILB	Makefile	/^SUPPORTLILB = support.a$/;"	m
+TARGET	Makefile	/^TARGET = framework.a$/;"	m
+__ARGS__	Args.h	/^#define __ARGS__$/;"	d
+__BASE__	Base.h	/^#define __BASE__$/;"	d
+__DATE_CLASS__	Date.h	/^#define __DATE_CLASS__$/;"	d
+__LOCKABLE_CLASS__	Lockable.h	/^#define __LOCKABLE_CLASS__$/;"	d
+__LOGENTRY_CLASS__	LogEntry.h	/^#define __LOGENTRY_CLASS__$/;"	d
+__LOGERFACTORY_CLASS__	LoggerFactory.h	/^#define __LOGERFACTORY_CLASS__$/;"	d
+__LOGREADER_CLASS__	LogReader.h	/^#define __LOGREADER_CLASS__$/;"	d
+__LOG_CLASS__	Log.h	/^#define __LOG_CLASS__$/;"	d
+__PTHREADLOCKABLE_CLASS__	PthreadLockable.h	/^#define __PTHREADLOCKABLE_CLASS__$/;"	d
+__PTHREADRUNABLE_CLASS__	PthreadRunable.h	/^#define __PTHREADRUNABLE_CLASS__$/;"	d
+__PTHREADTIMER_CLASS__	PthreadTimer.h	/^#define __PTHREADTIMER_CLASS__$/;"	d
+__RUNABLE_CLASS__	Runable.h	/^#define __RUNABLE_CLASS__$/;"	d
+__anon0d9ce0fd0103	Log.h	/^        typedef enum {$/;"	g	class:Log
+addNaturalValue	Args.cpp	/^void Args::addNaturalValue(const char * key, const char * alt, int def) {$/;"	f	class:Args	typeref:typename:void
+addStringValue	Args.cpp	/^void Args::addStringValue(const char * key, const char * alt, const char * def) {$/;"	f	class:Args	typeref:typename:void
+all	Makefile	/^all: $(LIB) $/;"	t
+baseDir	LoggerFactory.cpp	/^std::string baseDir = ".";$/;"	v	typeref:typename:std::string
+clean	Makefile	/^clean: $/;"	t
+date	LogEntry.h	/^        Date date;$/;"	m	class:LogEntry	typeref:typename:Date
+dayName	Date.h	/^        std::string dayName;$/;"	m	class:Date	typeref:typename:std::string
+dayNum	Date.h	/^        int dayNum;$/;"	m	class:Date	typeref:typename:int
+doLogStart	Log.cpp	/^void Log::doLogStart() {$/;"	f	class:Log	typeref:typename:void
+doMoveCmd	Log.cpp	/^void Log::doMoveCmd() {$/;"	f	class:Log	typeref:typename:void
+e_LogLelvel_t	Log.h	/^        } e_LogLelvel_t;$/;"	t	class:Log	typeref:enum:Log::__anon0d9ce0fd0103
+endLog	Log.cpp	/^const char * Log::endLog() {$/;"	f	class:Log	typeref:typename:const char *
+entry	LogEntry.h	/^        int entry;$/;"	m	class:LogEntry	typeref:typename:int
+entryMk	LogEntry.h	/^        std::string entryMk;$/;"	m	class:LogEntry	typeref:typename:std::string
+fileSize	Log.cpp	/^std::streampos Log::fileSize( const char* filePath ) {$/;"	f	class:Log	typeref:typename:std::streampos
+getClassName	Base.h	/^        std::string getClassName() {return mClassName;};$/;"	f	class:Base	typeref:typename:std::string
+getLog	Log.cpp	/^std::ostream & Log::getLog(e_LogLelvel_t level) {$/;"	f	class:Log	typeref:typename:std::ostream &
+getLogFileMaxSize	Log.h	/^        int getLogFileMaxSize() {return mMaxSize;}$/;"	f	class:Log	typeref:typename:int
+getLogFileName	Log.cpp	/^std::string Log::getLogFileName() {$/;"	f	class:Log	typeref:typename:std::string
+getLogger	LoggerFactory.cpp	/^std::shared_ptr<Log> LoggerFactory::getLogger(const char * logName) {$/;"	f	class:LoggerFactory	typeref:typename:std::shared_ptr<Log>
+getMonthNum	Date.cpp	/^unsigned int Date::getMonthNum(std::string & mon) {$/;"	f	class:Date	typeref:typename:unsigned int
+getNaturalValue	Args.cpp	/^int Args::getNaturalValue(const char * key) {$/;"	f	class:Args	typeref:typename:int
+getNewLogName	Log.cpp	/^std::string Log::getNewLogName(int idx) {    $/;"	f	class:Log	typeref:typename:std::string
+getStringValue	Args.cpp	/^const char * Args::getStringValue(const char * key) {$/;"	f	class:Args	typeref:typename:const char *
+getThreadName	PthreadRunable.h	/^        std::string & getThreadName() {return mThreadName;}$/;"	f	class:PthreadRunable	typeref:typename:std::string &
+getTimerName	PthreadTimer.h	/^        std::string & getTimerName() {return getThreadName();}$/;"	f	class:PthreadTimer	typeref:typename:std::string &
+h	Date.h	/^        int h,m,s;$/;"	m	class:Date	typeref:typename:int
+initialise	LoggerFactory.cpp	/^std::shared_ptr<Log> LoggerFactory::initialise(const char * logName, Log::e_LogLelvel_t level, i/;"	f	class:LoggerFactory	typeref:typename:std::shared_ptr<Log>
+isLogMaxSize	Log.h	/^        bool isLogMaxSize() {return mSize < (unsigned int) mMaxSize ? false : true;};$/;"	f	class:Log	typeref:typename:bool
+isValuePresent	Args.cpp	/^bool Args::isValuePresent(const char * key, const char * defval) {$/;"	f	class:Args	typeref:typename:bool
+join	PthreadRunable.cpp	/^void PthreadRunable::join() {$/;"	f	class:PthreadRunable	typeref:typename:void
+level	LogEntry.h	/^        std::string level;$/;"	m	class:LogEntry	typeref:typename:std::string
+lock	PthreadLockable.cpp	/^void PthreadLockable::lock() {$/;"	f	class:PthreadLockable	typeref:typename:void
+logLevel	LogEntry.h	/^        Log::e_LogLelvel_t logLevel;$/;"	m	class:LogEntry	typeref:typename:Log::e_LogLelvel_t
+logLevelFromString	Log.cpp	/^Log::e_LogLelvel_t Log::logLevelFromString(std::string & level) {$/;"	f	class:Log	typeref:typename:Log::e_LogLelvel_t
+loggerMap	LoggerFactory.cpp	/^std::map<std::string,std::shared_ptr<Log>> loggerMap;$/;"	v	typeref:typename:std::map<std::string,std::shared_ptr<Log>>
+m	Date.h	/^        int h,m,s;$/;"	m	class:Date	typeref:typename:int
+mArgc	Args.h	/^    int mArgc;$/;"	m	class:Args	typeref:typename:int
+mArgv	Args.h	/^    const char ** mArgv;$/;"	m	class:Args	typeref:typename:const char **
+mClassName	Base.h	/^        const std::string mClassName;$/;"	m	class:Base	typeref:typename:const std::string
+mDate	Log.h	/^        Date mDate;             \/\/ Current date and time$/;"	m	class:Log	typeref:typename:Date
+mDstr	Date.h	/^        std::string mDstr;$/;"	m	class:Date	typeref:typename:std::string
+mEntries	Log.h	/^        unsigned int mEntries;  \/\/ Current number of log entries$/;"	m	class:Log	typeref:typename:unsigned int
+mIntArgs	Args.h	/^    std::map<std::string,int> mIntArgs;$/;"	m	class:Args	typeref:typename:std::map<std::string,int>
+mLevel	Log.h	/^        e_LogLelvel_t mLevel;   \/\/ Level to start logging at $/;"	m	class:Log	typeref:typename:e_LogLelvel_t
+mLogName	Log.h	/^        std::string mLogName;   \/\/ Name of the log file$/;"	m	class:Log	typeref:typename:std::string
+mMaxSize	Log.h	/^        int mMaxSize;           \/\/ Maximum log size in bytes$/;"	m	class:Log	typeref:typename:int
+mMutex	Log.h	/^        pthread_mutex_t mMutex; \/\/ Mutex lock$/;"	m	class:Log	typeref:typename:pthread_mutex_t
+mMutex	PthreadLockable.h	/^        pthread_mutex_t mMutex;$/;"	m	class:PthreadLockable	typeref:typename:pthread_mutex_t
+mNow	Date.h	/^        time_t mNow;$/;"	m	class:Date	typeref:typename:time_t
+mOut	Log.h	/^        std::ofstream mOut;     \/\/ Output stream fro the log $/;"	m	class:Log	typeref:typename:std::ofstream
+mReturn	PthreadRunable.h	/^        void * mReturn;$/;"	m	class:PthreadRunable	typeref:typename:void *
+mRunState	PthreadRunable.h	/^        int mRunState;$/;"	m	class:PthreadRunable	typeref:typename:int
+mRunTimer	PthreadTimer.h	/^        bool mRunTimer;$/;"	m	class:PthreadTimer	typeref:typename:bool
+mRunning	PthreadRunable.h	/^        bool mRunning;$/;"	m	class:PthreadRunable	typeref:typename:bool
+mSize	Log.h	/^        unsigned int mSize;     \/\/ Current size of the log file$/;"	m	class:Log	typeref:typename:unsigned int
+mState	Log.h	/^        e_LogLelvel_t mState;   \/\/ Last log state$/;"	m	class:Log	typeref:typename:e_LogLelvel_t
+mStrArgs	Args.h	/^    std::map<std::string,std::string>mStrArgs;$/;"	m	class:Args	typeref:typename:std::map<std::string,std::string>
+mThread	PthreadRunable.h	/^        pthread_t mThread;$/;"	m	class:PthreadRunable	typeref:typename:pthread_t
+mThreadName	PthreadRunable.h	/^        std::string mThreadName;$/;"	m	class:PthreadRunable	typeref:typename:std::string
+mTimeout	PthreadTimer.h	/^        int mTimeout;$/;"	m	class:PthreadTimer	typeref:typename:int
+month	Date.h	/^        std::string month;$/;"	m	class:Date	typeref:typename:std::string
+msg	LogEntry.h	/^        std::string msg;$/;"	m	class:LogEntry	typeref:typename:std::string
+now	Date.cpp	/^std::string Date::now() {$/;"	f	class:Date	typeref:typename:std::string
+operator <<	Date.cpp	/^std::ostream& operator<<(std::ostream& os, const Date & dt) {$/;"	f	typeref:typename:std::ostream &
+operator <<	Log.cpp	/^std::ostream & operator<<(std::ostream & os, Log & log) {$/;"	f	typeref:typename:std::ostream &
+operator <<	Log.cpp	/^std::ostream & operator<<(std::ostream & os, Log::e_LogLelvel_t ll) {$/;"	f	typeref:typename:std::ostream &
+operator <<	LogEntry.cpp	/^std::ostream & operator<<(std::ostream & os, LogEntry & le) {$/;"	f	typeref:typename:std::ostream &
+operator >>	Date.cpp	/^std::istream& operator>>(std::istream& is, Date & dt) {$/;"	f	typeref:typename:std::istream &
+operator >>	LogEntry.cpp	/^std::istream& operator>>(std::istream& is, LogEntry& le) {$/;"	f	typeref:typename:std::istream &
+readLogFile	LogReader.cpp	/^void LogReader::readLogFile(const char * logFile) {$/;"	f	class:LogReader	typeref:typename:void
+resetLogLevel	Log.cpp	/^void Log::resetLogLevel(e_LogLelvel_t level) {$/;"	f	class:Log	typeref:typename:void
+resetLogSize	Log.cpp	/^void Log::resetLogSize(int maxLogSize) {$/;"	f	class:Log	typeref:typename:void
+run	PthreadTimer.cpp	/^void PthreadTimer::run() {$/;"	f	class:PthreadTimer	typeref:typename:void
+runThread	PthreadRunable.cpp	/^void * PthreadRunable::runThread(void * m) {$/;"	f	class:PthreadRunable	typeref:typename:void *
+s	Date.h	/^        int h,m,s;$/;"	m	class:Date	typeref:typename:int
+setBaseDir	LoggerFactory.cpp	/^void LoggerFactory::setBaseDir(const char * dir) {$/;"	f	class:LoggerFactory	typeref:typename:void
+setLastEntry	Log.cpp	/^void Log::setLastEntry() {$/;"	f	class:Log	typeref:typename:void
+start	PthreadRunable.cpp	/^void PthreadRunable::start() {$/;"	f	class:PthreadRunable	typeref:typename:void
+start	PthreadTimer.cpp	/^void PthreadTimer::start() {$/;"	f	class:PthreadTimer	typeref:typename:void
+unlock	PthreadLockable.cpp	/^void PthreadLockable::unlock() {$/;"	f	class:PthreadLockable	typeref:typename:void
+year	Date.h	/^        int year;$/;"	m	class:Date	typeref:typename:int
+~PthreadLockable	PthreadLockable.cpp	/^PthreadLockable::~PthreadLockable() {$/;"	f	class:PthreadLockable

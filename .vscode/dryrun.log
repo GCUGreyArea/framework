@@ -1,0 +1,21 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/barry.robinson/workspace/sandbox/development/models/framework_lib'
+c++ -c -Wall -g -std=c++17 Log.cpp -o Log.o
+c++ -c -Wall -g -std=c++17 LogEntry.cpp -o LogEntry.o
+c++ -c -Wall -g -std=c++17 LogReader.cpp -o LogReader.o
+c++ -c -Wall -g -std=c++17 Date.cpp -o Date.o
+c++ -c -Wall -g -std=c++17 Lockable.cpp -o Lockable.o
+c++ -c -Wall -g -std=c++17 Runable.cpp -o Runable.o
+c++ -c -Wall -g -std=c++17 PthreadLockable.cpp -o PthreadLockable.o
+c++ -c -Wall -g -std=c++17 PthreadRunable.cpp -o PthreadRunable.o
+c++ -c -Wall -g -std=c++17 Args.cpp -o Args.o
+c++ -c -Wall -g -std=c++17 PthreadTimer.cpp -o PthreadTimer.o
+c++ -c -Wall -g -std=c++17 RdFile.cpp -o RdFile.o
+c++ -c -Wall -g -std=c++17 Base.cpp -o Base.o
+echo "Building shared library"
+c++ -Wall -g -std=c++17 -shared -o libframework.so Log.o LogEntry.o LogReader.o Date.o Lockable.o Runable.o PthreadLockable.o PthreadRunable.o Args.o PthreadTimer.o RdFile.o Base.o
+cp libframework.so /usr/local/lib
+mkdir -p /usr/local/include/framework
+cp *.h /usr/local/include/framework 
+make: Leaving directory `/Users/barry.robinson/workspace/sandbox/development/models/framework_lib'
+ 
